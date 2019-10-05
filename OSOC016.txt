@@ -150,7 +150,8 @@ String after reverse is rukna.
 
 
 8.What is concept of Branching? How it is useful ?Explain with working examples.
-
+Ans: Branches are pointers to a specific commit. 
+Branches are of two types: Local Branches,Remote-tracking branches. 
 
 
 
