@@ -154,8 +154,13 @@ Ans: Step 1: git log
      Step 2:git log filename to get the hash value of commit you want to revert
      Step 3: git revert hash value.
 
+11. How to preview the changes before you have made before applying merging commands?
+Ans: 
 
 
+
+13.What is git stash stack??how to write workingg on stash stack top???
+Ans : stashing:git stash temporarily shelves (or stashes) changes you've made to your working copy so you can work on something else, and then come back and re-apply them later on. Stashing is handy if you need to quickly switch context and work on something else, but you're mid-way through a code change and aren't quite ready to commit.
 
 
 
