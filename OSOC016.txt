@@ -1,0 +1,177 @@
+1. Command for searching pattern line by line in any document with an example.
+
+Ans: grep -n "pattern" filename
+Example: 
+~cat >bobb.txt
+Hello Im Ankur Dubey
+I study in NITT MCA Department
+My hobbies are playing cricket volleyball and chess.
+I love travelling,photgrapgy, coding and study story books. 
+I want to be placed in a nice company from where i can learn a lot of things. 
+I am hard working, confident in my work and put all efforts to to whatever I start.
+~grep -n "I" bobb.txt
+2:I study in NITT MCA Department
+3:My hobbies are playing cricket volleyball and chess.
+4:I love travelling,photgrapgy, coding and study story books.
+5:I want to be placed in a nice company from where i can learn a lot of things. 
+6:I am hard working, confident in my work and put all efforts to to whatever I start.
+
+
+
+
+
+2.What all permissions are there in LINUX. State all permissions and different way of changing permissions.
+
+Ans. There are three kind of permissions in LINUX. 
+      a.Read (r)
+      b.Write (w)
+      c.Execute (x)
+There are 3 users to a particular file to which we provide permissions. 
+Others Users and Group.
+to check the permission we use command : ls -l filename
+To change the permission we have two methods: 1.Symbollic 2.Octal numbers
+In symbollic we use + sign to add permission and - to remove along with the user and the permissions, Eg: $chmod o+wx,u-x,g=rx testfile ,It will give other permission to write and execute, and remove permision from user to execute and group to only read and execute. 
+In Octal number represtation we use ocatl numbers to add or remove $chmod 743 testfile,7 is to provide all permision to other, 4 is read to user and 3 is wx to group.
+
+
+
+3.Create a folder name OSOC and inside that another folder Inductions and now create a file task.txt, inside Inductions with some contents. Now copy into another folder Workshop in OSOC.
+
+Ans:~mkdir OSOC
+OSOC~mkdir Inductions
+OSOC~mkdir Workshop
+OSOC~cd Inductions
+OSOC/Induction~ cat > task.txt
+>This is my OSOC Induction task File. I wanted to be part of the club because i wanted to contribute to open souce. It will lead to reduce human effort and make things available easily.
+OSOC/Induction~ cp task.txt ../Workshop/file.txt
+OSOC/Induction~cd ../
+OSOC/~ cd Workshop
+OSOC/Workshop/~ ls
+file.txt
+
+
+
+4.I want to check whether my system is connected to any network or not, give an appropriate command for that. 
+
+Ans. We can use ping command.
+
+
+
+5.How to change password for another user in Linux?
+
+Ans: Firstly we need to login as root /admin
+the , type, passwd username
+or sudo passwd username
+Enter new unix password:
+Retypr the password:
+Password changed successfully.
+
+
+6.Write shell script to sort an array. Input should be taken from User.
+
+Ans: 
+vi touch.c
+#include<stdio.h>
+int main()
+{
+        int n,j;
+        printf("Enter how many Elements");
+        scanf("%d",&n);
+        int a[n],i,temp;
+        for(i=0;i<n;i++)
+        {
+                scanf("%d",&a[i]);
+        }
+        for(i=0;i<n-1;i++)
+        {
+                for(j=0;j<n-1;j++)
+                {
+                        if(a[j]>a[j+1])
+                        {
+                                temp=a[j];
+                                a[j]=a[j+1];
+                                a[j+2]=temp;
+                                }
+                }
+        }
+        printf("\nThe sorted array is:");
+       for(i=0;i<n;i++)
+       {
+                printf("%d ",a[i]);
+       }
+        return 0;
+}
+
+
+esc :w
+esc :wq
+ gcc touch.c -o sort
+ ./sort
+Enter how may elements: 5
+5 4 2 1 2
+The sorted array is: 1 2 2 4 5
+
+
+
+
+7.Using shell script write a program to reverse the string. 
+vi reverse.c
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+        char Str[100], RevStr[100];
+        int i, j, len;
+
+        printf("\n Please Enter any String :  ");
+        gets(Str);
+
+        j = 0;
+        len = strlen(Str);
+
+        for (i = len - 1; i >= 0; i--)
+        {
+                RevStr[j++] = Str[i];
+        }
+        RevStr[i] = '\0';
+
+        printf("\n String after Reversing = %s", RevStr);
+
+        return 0;
+}
+
+esc: w
+esc: wq
+gcc reverse.c -o reverse
+./reverse
+enter the string ankur
+String after reverse is rukna.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
