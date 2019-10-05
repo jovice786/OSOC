@@ -151,7 +151,7 @@ String after reverse is rukna.
 
 8.What is concept of Branching? How it is useful ?Explain with working examples.
 Ans: Branches are pointers to a specific commit. 
-Branches are of two types: Local Branches,Remote-tracking branches. 
+Branches are of two types: Local Branches,Remote-tracking branches. There is always a master branch which contains all the codes. Suppose we want some changes but not sure to add to master branch or not, then we make another branch. Once we are sure to add those code we merge the local branch into master  branch.
 
 
 
