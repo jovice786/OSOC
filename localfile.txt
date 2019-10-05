@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 This is my local file.
 Im making this to show examples to OSOC Wizards.
 So that they can they me in their club.
 The only cllub im fascinated.
 Reverse a new commit.
+=======
+HEY!!
+Im goint to make changes and see what happens!!hehehehehe .
+>>>>>>> 46bc1aa81cbed6b77af408e58b1abae61e5c3688
