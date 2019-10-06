@@ -12,4 +12,3 @@ HEY!!
 Im goint to make changes and see what happens!!hehehehehe .
 >>>>>>> 46bc1aa81cbed6b77af408e58b1abae61e5c3688
 >>>>>>> localbranch
-Im goint to commit new changes and then revert them using two different methods.
